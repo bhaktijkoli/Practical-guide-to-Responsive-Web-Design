@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoints</title>
+    <style>
+        body {
+            background: #f1c40f;
+        }
+
+        .title:after {
+            font-size: 2rem;
+            content: 'Very Small Devices';
+        }
+
+        @media screen and (min-width: 640px) {
+            body {
+                background: #2ecc71;
+            }
+
+            .title:after {
+                content: 'Small Devices';
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                background: #3498db;
+            }
+
+            .title:after {
+                content: 'Medium Devices';
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            body {
+                background: #e74c3c;
+            }
+
+            .title:after {
+                content: 'Large Devices';
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            body {
+                background: #7f8c8d;
+            }
+
+            .title:after {
+                content: 'Extra Large Devices';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title"></div>
+</body>
+
+</html>

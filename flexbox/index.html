@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0px auto;
+        }
+
+        .layout {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box {
+            width: 100%;
+            height: 200px;
+            margin: 10px 0px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .layout {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .box {
+                flex: 1;
+                height: 200px;
+                margin: 10px;
+            }
+
+            .box:first-child {
+                margin-left: 0px;
+            }
+
+            .box:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        .red {
+            background-color: #e74c3c;
+        }
+
+        .green {
+            background-color: #2ecc71;
+        }
+
+        .blue {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="layout">
+            <div class="box red">
+            </div>
+            <div class="box green">
+            </div>
+            <div class="box blue">
+            </div>
+            <div class="box blue">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
